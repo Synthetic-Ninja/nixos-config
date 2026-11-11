@@ -1,0 +1,85 @@
+{
+  //Выключение телеметрии
+  "redhat.telemetry.enabled": false,
+  
+  "editor.tabSize": 4,
+
+  // Настройки переноса слов
+  "editor.wordWrapColumn": 79,
+  
+  // Внешний вид
+  "workbench.colorTheme": "PyCharm Dark Theme",
+  "workbench.iconTheme": "symbols",
+  "editor.minimap.enabled": false,
+  "editor.glyphMargin": true,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "window.density.editorTabHeight": "compact",
+  "symbols.hidesExplorerArrows": true,
+  "workbench.productIconTheme": "el-vsc-v1-icons",
+  "workbench.activityBar.location": "hidden",
+  "editor.rulers": [79],
+  "window.commandCenter": false,
+
+  //Подсветка синтаксиса
+  "editor.tokenColorCustomizations": {
+  "comments": "#31b58d",
+  "textMateRules": [
+      
+      {
+        "scope": "keyword.operator.unpacking.parameter.python",
+        "settings": {
+          "foreground": "#5c81ed",
+        }
+      }
+  ] 
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "window.confirmBeforeClose": "keyboardOnly",
+
+  //Прочие настройки
+  "editor.fontLigatures": false,
+  "search.followSymlinks": true,
+
+  //Синхронизация профиля
+  "database-client.autoSync": true,
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "basic",
+  
+
+  //Настройка code spell checker
+  "cSpell.language": "en,ru",
+  "cSpell.enabled": true,
+
+  //Обновления
+  "update.mode": "none",
+  "extensions.autoUpdate": "off",
+  "extensions.ignoreRecommendations": true,
+  
+  //VIM шорткаты
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.referenceSearch.trigger"]
+    },
+  ],
+  "chat.commandCenter.enabled": false,
+  "mypy-type-checker.severity": {"error":"Warning"},
+  "mypy-type-checker.showNotifications": "always",
+  "mypy-type-checker.reportingScope": "workspace",
+  "git.openRepositoryInParentFolders": "never",
+  //Excluding Files
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true
+  },
+  "rewrap.reformat": true,
+  "rewrap.autoWrap.enabled": true,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 13,
+  "editor.selectionClipboard": false,
+
+  "python.defaultInterpreterPath": "/sbin/python3.14"
+
+}

@@ -1,0 +1,127 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+f",
+        "command": "actions.find",
+        "when": ""
+    },
+    {
+        "key": "ctrl+r",
+        "command": "editor.action.startFindReplaceAction",
+        "when": "editorTextFocus" // Условие: работает только в редакторе
+    },
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.quickOpen",
+        "when": ""
+    },
+    { 
+        "key": "escape",
+        "command": "closeFindWidget",
+        "when": "editorFocus && findWidgetVisible && !isComposing"
+    }, 
+    { 
+        "key": "shift+tab",
+        "command": "workbench.action.previousEditor",
+        "when": "editorTextFocus && vim.mode == 'Normal' && !inDebugRepl"
+    },
+    { 
+        "key": "tab",
+        "command": "workbench.action.nextEditor",
+        "when": "editorTextFocus && vim.mode == 'Normal' && !inDebugRepl"
+    },
+    { 
+        "key": "ctrl+l",
+        "command": "workbench.action.focusNextGroup",
+        "when": "vim.mode == 'Normal' && !inDebugRepl"
+    },
+    { 
+        "key": "ctrl+h",
+        "command": "workbench.action.focusPreviousGroup",
+        "when": "vim.mode == 'Normal' && !inDebugRepl"
+    },
+    { 
+        "key": "ctrl+shift+l",
+        "command": "workbench.action.moveEditorToNextGroup",
+        "when": "vim.mode == 'Normal' && !inDebugRepl"
+    },
+    { 
+        "key": "ctrl+shift+h",
+        "command": "workbench.action.moveEditorToPreviousGroup",
+        "when": "vim.mode == 'Normal' && !inDebugRepl"
+    },
+    {
+        "key": "a",
+        "command": "explorer.newFile",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "shift+a",
+        "command": "explorer.newFolder",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "r",
+        "command": "renameFile",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "workbench.files.action.focusFilesExplorer",
+        "when": "!explorerViewletVisible"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "explorerViewletVisible"
+    },
+    {
+        "key": "ctrl+shift+r",
+        "command": "workbench.action.replaceInFiles"
+    },
+    {
+        "key": "escape",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "(sideBarVisible && sideBarFocus && !explorerViewletVisible)"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.focusSideBar",
+        "when": "activeEditorGroupIndex == 1 && sideBarVisible" 
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "sideBarVisible && sideBarFocus" 
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.closeActiveEditor",
+        "when": ""
+    },
+    {
+        "key": "ctrl+f",
+        "command": "workbench.action.findInFiles",
+        "when": "explorerViewletVisible && !inputFocus"
+    },
+    {
+        "key": "enter",
+        "command": "search.action.focusSearchList",
+        "when": "searchViewletVisible && searchInputBoxFocus"
+    },
+    // {
+    //     "key": "g r",
+    //     "command": "editor.action.referenceSearch.trigger",
+    //     "when": "editorHasReferenceProvider && editorTextFocus && vim.mode != 'Insert'"
+    // },
+    // {
+    //     "key": "g d",
+    //     "command": "editor.action.goToDeclaration",
+    //     "when": "editorHasDefinitionProvider && editorTextFocus && vim.mode != 'Insert'"
+    // },
+    // {
+    //     "key": "g g",
+    //     "command": "cursorTop",
+    //     "when": "editorTextFocus && vim.mode != 'Insert'"
+    // },
+]

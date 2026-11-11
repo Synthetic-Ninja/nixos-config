@@ -1,0 +1,16 @@
+// Minimal Niri configuration. Extend keyboard, outputs and workspaces here.
+input {
+    keyboard {
+        xkb {
+            layout "us,ru"
+            options "grp:win_space_toggle"
+        }
+    }
+}
+
+binds {
+    Mod+Return { spawn "foot"; }
+    Mod+Q { close-window; }
+    Mod+Shift+E { quit; }
+    Mod+Shift+Slash { show-hotkey-overlay; }
+}

@@ -1,0 +1,112 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "base_keymap": "VSCode",
+  "cli_default_open_behavior": "existing_window",
+  "tabs": {
+    "file_icons": true
+  },
+  "ui_font_weight": 200.0,
+  "auto_update": false,
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+    "anthropic_retention": false,
+  },
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  // Настройки ИИ
+  "disable_ai": true,
+  "agent": { "enabled": false },
+  "git_panel": {
+    "dock": "left",
+  },
+  "vim_mode": true,
+  "ui_font_size": 18.0,
+  "buffer_font_size": 16,
+  "buffer_font_family": "JetBrains Mono",
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "One Light",
+  },
+  "languages": {
+    "Python": {
+      "language_servers": [
+        // Enable ty, disable basedpyright, and enable all
+        // other registered language servers (ruff, pylsp, pyright).
+        //"ty",
+        //"pylsp",
+        //"pyright",
+        "basedpyright",
+        "ruff",
+      ],
+      //"semantic_tokens":"combined",
+    },
+  },
+  "theme_overrides": {
+    "Dark Stealth": {
+      "syntax": {
+        "constructor": { "color": "#7fa66e" },
+        "function": { "color": "#e0c07a" },
+        "string.doc": { "color": "#20ac62", "font_style": "italic" },
+        "string": { "color": "#7fa66e" },
+        "type.class.inheritance": { "color": "#B18EDE" },
+      },
+    },
+  },
+  "format_on_save": "off",
+  "diagnostics": {
+    "inline": {"enabled": true}
+  },
+  "lsp": {
+    "pylsp": {
+      "initialization_options": {
+        "pythonPath": ".venv/bin/python"
+      },
+      "settings": {
+        "plugins": {
+          "mypy": {
+            "enabled": true,
+            "live_mode": true,
+          },
+          "pycodestyle": {"enabled": false},
+          "pyflakes": {"enabled": false}
+        }
+      }
+    },
+    "pyright": {
+          "settings": {
+            "python": {
+              "analysis": {
+                "typeCheckingMode": "basic",
+                "autoSearchPaths": true,
+                "useLibraryCodeForTypes": true
+              }
+            }
+          }
+        },
+    "yaml-language-server": {
+      "settings": {
+        "yaml": {
+          "validate": true,
+          "completion": true,
+          "schemaStore": {"enable": true}
+        }
+    }
+  }
+  }
+}

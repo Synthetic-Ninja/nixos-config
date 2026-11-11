@@ -1,0 +1,120 @@
+config_version = 19
+
+[bar.default]
+margin_ends = 0
+radius = 0
+radius_top_right = 1
+
+[control_center.media]
+show_visualizer = false
+
+[desktop_widgets]
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[location]
+auto_locate = true
+
+[lockscreen]
+blur_intensity = 0.0
+edge_smoothness = 0.29999999329447746
+tint_color = "#FFFFFF"
+tint_intensity = 0.0
+transition = [ "fade" ]
+transition_duration = 400
+wallpaper = "/home/sintet/nixos-config/assets/wallpaper/earth-wallpaper.jpg"
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [ "lockscreen-login-box@Virtual-1", "lockscreen-widget-0000000000000001" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 8
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@Virtual-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 640.0
+    cy = 510.0
+    output = "Virtual-1"
+    placement_height = 800.0
+    placement_width = 1280.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@Virtual-1".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_media_controls = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 640.0
+    cy = 244.75
+    output = "Virtual-1"
+    placement_height = 800.0
+    placement_width = 1280.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        background = true
+        background_color = "surface"
+        background_opacity = 0.22
+        background_padding = 10
+        background_radius = 32
+        center_text = true
+        circle = true
+        clock_style = "digital"
+        color = "on_surface"
+        font_family = ""
+        format = "{:%H:%M}"
+        shadow = true
+        show_seconds = true
+        timezone = ""
+
+[shell.animation]
+speed = 2.0000000298023224
+
+[theme]
+builtin = "Tokyo-Night"
+community_palette = "Paradise"
+mode = "dark"
+source = "community"
+wallpaper_scheme = "m3-rainbow"
+
+[wallpaper]
+directory = "/home/sintet/nixos-config/assets/wallpaper"
+
+    [wallpaper.default]
+    path = "/home/sintet/nixos-config/assets/wallpaper/earth-wallpaper.jpg"
+
+    [wallpaper.last]
+    path = "/home/sintet/nixos-config/assets/wallpaper/earth-wallpaper.jpg"
+
+    [wallpaper.monitors.Virtual-1]
+    path = "/home/sintet/nixos-config/assets/wallpaper/earth-wallpaper.jpg"

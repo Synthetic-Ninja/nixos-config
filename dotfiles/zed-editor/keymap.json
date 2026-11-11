@@ -1,0 +1,74 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+      "ctrl-n": "file_finder::Toggle",
+      "ctrl-w": "pane::CloseActiveItem",
+
+      "ctrl-alt-h": "vim::ResizePaneLeft",
+      "ctrl-alt-l": "vim::ResizePaneRight",
+      "ctrl-alt-k": "vim::ResizePaneUp",
+      "ctrl-alt-j": "vim::ResizePaneDown"
+
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+      "ctrl-l": "workspace::ActivatePaneRight",
+
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore"
+    },
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "tab": "pane::ActivateNextItem",
+      "shift-tab": "pane::ActivatePreviousItem",
+      "g r": "editor::FindAllReferences",
+
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-.": "editor::Hover",
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-shift-h": [
+          "workspace::MoveItemToPaneInDirection",
+          {
+            "direction": "left"
+          }
+      ],
+      "ctrl-shift-l": [
+          "workspace::MoveItemToPaneInDirection",
+          {
+            "direction": "right"
+          }
+      ]
+    },
+  },
+  {
+      "context": "ProjectPanel && not_editing",
+      "bindings": {
+        "a": "project_panel::NewFile",
+        "shift-a": "project_panel::NewDirectory"
+      }
+    }
+
+]

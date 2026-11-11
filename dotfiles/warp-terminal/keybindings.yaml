@@ -1,0 +1,14 @@
+---
+"editor_view:cut_word_left": none
+"input:clear_screen": none
+"editor_view:delete": none
+"ai_assistant_panel:focus_terminal_input": none
+"workspace:activate_prev_tab": ctrl-shift-H
+"pane_group:navigate_next": ctrl-l
+"terminal:focus_input": none
+"notebookview:focus_terminal_input": none
+"editor_view:down": none
+"editor_view:backspace": none
+"workspace:activate_next_tab": ctrl-shift-L
+"pane_group:navigate_prev": ctrl-h
+"pane_group:add_right": ctrl-n
