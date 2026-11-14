@@ -1,7 +1,17 @@
 {
   description = "NixOS configuration: desktop (x86_64) and macbook (UTM ARM64)";
+ 
+  nixConfig = {
+    extra-substituters = [
+      "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store"
+      "https://mirror.sjtu.edu.cn/nix-channels/store"
+      "https://mirrors.ustc.edu.cn/nix-channels/store"
+    ];
+
+  };
 
   inputs = {
+
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     disko = {
