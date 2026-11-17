@@ -1,7 +1,6 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    git
     ripgrep
     fd
     fastfetch
@@ -12,7 +11,6 @@
     telegram-desktop
     pyenv
     uv
-    openvpn
     python313
     libreoffice
   ];

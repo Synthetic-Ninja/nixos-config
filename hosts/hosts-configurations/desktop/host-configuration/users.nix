@@ -1,4 +1,4 @@
-{ host, ... }:
+{ host, pkgs, ... }:
 
 { 
   # Define a common system user
@@ -13,6 +13,7 @@
     home = "/home/${host.username}";
     createHome = true;
     extraGroups = [ "networkmanager" "wheel" "docker" ];
+    shell = pkgs.zsh;
   };
 
 

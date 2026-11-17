@@ -1,6 +1,18 @@
 config_version = 19
 
 [bar.default]
+end = [
+    "keyboard_layout",
+    "notifications",
+    "clipboard",
+    "network",
+    "bluetooth",
+    "volume",
+    "brightness",
+    "battery",
+    "control-center",
+    "session"
+]
 margin_ends = 0
 radius = 0
 radius_top_right = 1
@@ -28,18 +40,83 @@ edge_smoothness = 0.29999999329447746
 tint_color = "#FFFFFF"
 tint_intensity = 0.0
 transition = [ "fade" ]
-transition_duration = 400
+transition_duration = 100
 wallpaper = "/home/sintet/nixos-config/assets/wallpaper/earth-wallpaper.jpg"
 
 [lockscreen_widgets]
 enabled = true
 schema_version = 2
-widget_order = [ "lockscreen-login-box@Virtual-1", "lockscreen-widget-0000000000000001" ]
+widget_order = [
+    "lockscreen-login-box@Virtual-1",
+    "lockscreen-widget-0000000000000001",
+    "lockscreen-login-box@DP-3",
+    "lockscreen-login-box@DP-4",
+    "lockscreen-widget-0000000000000002"
+]
 
     [lockscreen_widgets.grid]
     cell_size = 8
     major_interval = 4
     visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-3"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 1280.0
+    cy = 832.0
+    output = "DP-3"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-3".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_media_controls = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-4"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 1280.0
+    cy = 880.0
+    enabled = false
+    output = "DP-4"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-4".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_media_controls = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
 
     [lockscreen_widgets.widget."lockscreen-login-box@Virtual-1"]
     box_height = 196.0
@@ -96,6 +173,17 @@ widget_order = [ "lockscreen-login-box@Virtual-1", "lockscreen-widget-0000000000
         shadow = true
         show_seconds = true
         timezone = ""
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 1280.0
+    cy = 572.25
+    output = "DP-3"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "clock"
 
 [shell.animation]
 speed = 2.0000000298023224

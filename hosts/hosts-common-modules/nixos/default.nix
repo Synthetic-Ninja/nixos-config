@@ -7,5 +7,6 @@
     ./docker.nix
     ./thunar.nix
     ./cache-mirrors.nix
+    ./shell.nix
   ];
 }

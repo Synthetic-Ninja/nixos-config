@@ -1,13 +1,15 @@
 { ... }:
 
 {
- imports = [
-  ./bootloader.nix
-  ./datetime.nix
-  ./locale.nix
-  ./network.nix
-  ./packages.nix
-  ./users.nix
- ];
-
+    imports = [
+        ./bootloader.nix
+        ./datetime.nix
+        ./locale.nix
+        ./network.nix
+        ./packages.nix
+        ./users.nix
+	./openvpn.nix
+	./dnsmasq.nix
+        ./certs
+    ];
 }

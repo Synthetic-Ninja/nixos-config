@@ -78,8 +78,6 @@
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontSize": 13,
-  "editor.selectionClipboard": false,
-
-  "python.defaultInterpreterPath": "/sbin/python3.14"
+  "editor.selectionClipboard": false
 
 }

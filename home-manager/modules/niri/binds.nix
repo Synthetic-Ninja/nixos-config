@@ -16,8 +16,18 @@
   "Mod+H".action.focus-column-or-monitor-left = [];
   "Mod+L".action.focus-column-or-monitor-right = [];
 
-  "Mod+Shift+H".action.move-workspace-to-monitor-left = [];
-  "Mod+Shift+L".action.move-workspace-to-monitor-right = [];
+  "Mod+Shift+H".action.focus-monitor-left = [];
+  "Mod+Shift+L".action.focus-monitor-right = [];
+
+  "Mod+Shift+Alt+H".action.move-workspace-to-monitor-left = [];
+  "Mod+Shift+Alt+L".action.move-workspace-to-monitor-right = [];
+  
+  "Mod+Shift+Q".action.spawn = [
+   "noctalia"
+   "msg"
+   "session"
+   "lock" 
+  ];
 
   "Mod+J".action.focus-workspace-down = [];
   "Mod+K".action.focus-workspace-up = [];

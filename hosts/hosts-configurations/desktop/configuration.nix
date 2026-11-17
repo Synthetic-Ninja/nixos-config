@@ -7,7 +7,7 @@
 {
   imports = [ 
     ./hardware-configuration.nix
-    ./disko.nix
+    #./disko.nix
     ./host-configuration
     ../../hosts-common-modules/nixos
   ];
@@ -24,8 +24,5 @@
     ];
 
   };
-  
-  services.spice-vdagentd.enable = true;
-
- 
+   
 }

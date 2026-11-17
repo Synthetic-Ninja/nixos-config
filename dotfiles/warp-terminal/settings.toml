@@ -15,7 +15,7 @@ input_mode = "waterfall"
 enabled = true
 
 [appearance.window]
-zoom_level = 100
+zoom_level = 125
 
 [account]
 is_settings_sync_enabled = true
@@ -79,6 +79,10 @@ is_any_ai_enabled = false
 [agents.warp_agent.input]
 nld_in_terminal_enabled = false
 
+[agents.warp_agent.other]
+show_agent_notifications = true
+show_conversation_history = true
+
 [agents.execution_profiles]
 
 [agents.execution_profiles.default]
@@ -119,12 +123,15 @@ web_search_enabled = true
 write_to_pty = "always_ask"
 
 [agents.third_party]
-should_render_cli_agent_toolbar = false
+should_render_cli_agent_toolbar = true
 
 [code]
 
 [code.editor]
 show_hidden_files = false
+show_code_review_button = false
+show_project_explorer = true
+show_global_search = true
 
 [terminal]
 
@@ -133,9 +140,25 @@ input_box_type_setting = "universal"
 honor_ps1 = false
 
 [system]
-force_x11 = false
+force_x11 = true
+prefer_low_power_gpu = false
 
 [warpify]
 
 [warpify.ssh]
 ssh_extension_install_mode = "never_install"
+enable_ssh_warpification = false
+
+[warpify.subshells]
+added_subshell_commands = ["nix-shell"]
+
+[general]
+default_session_mode = "agent"
+
+[warp_drive]
+enabled = true
+
+[session]
+
+[session.new_session_shell_override]
+executable = "/nix/store/d0a35flb05pwl8rkmvh6kcgvs7wpgh6b-zsh-5.9.2/bin/zsh"

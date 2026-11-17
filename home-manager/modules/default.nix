@@ -7,5 +7,8 @@
     ./warp-terminal.nix
     ./vscode.nix
     ./zed-editor.nix
+    ./direnv.nix
+    ./shell.nix
+    ./git.nix
   ];
 }

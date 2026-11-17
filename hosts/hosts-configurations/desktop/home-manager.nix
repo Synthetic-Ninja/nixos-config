@@ -6,7 +6,7 @@
       mode = {
         width = 2560;
         height = 1440;
-        refresh = 60.0;
+        refresh = 144.0;
       };
       position = {
         x = 0;
@@ -32,4 +32,8 @@
       enable = false;
     };
   };
+
+ programs.zsh.shellAliases."rebuild-system" =
+  ''(cd "$HOME/nixos-config" && git add -A && sudo nixos-rebuild switch --flake .#desktop)'';
+
 }
